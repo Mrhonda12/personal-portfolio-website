@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My first page</title>
+<!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>My first Webpage</h1>
+    <p>Hello everyone My is Marc, and I am learning HTML.</p>
+<h2>About me.</h2>
+<p> I'm a Computer Science student. I Like coding in C++.</p>
+<p>I'm also interested in web development!</p>
+<h2>Fun Fact.</h2>
+<p>I will turn 30 soon.<br>HTML is easy compared to C++. <br>I love to workout.</p>
+<h2>Links and Images</h2>
+
+<p>Here is my favorite search engine: 
+<a href="https://www.google.com" target="_blank">Google</a></p>
+
+<p>Here is the HTML5 logo:</p>
+<img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" 
+     alt="HTML5 Logo Big" 
+     width="120">
+<h2>My Favorite Things</h2>
+
+<p>Here are some things I enjoy:</p>
+<ul>
+  <li>Gaming</li>
+  <li>Fitness</li>
+  <li>Music</li>
+</ul>
+
+<h2>My Top 3 Programming Goals</h2>
+<ol>
+  <li>Finish my CS degree</li>
+  <li>Get better at C++</li>
+  <li>Build my own website portfolio</li>
+</ol>
+  <h1>Marc Hernandez</h1>
+<p><strong>Email:</strong> marca.hernandez1@yahoo.com | 
+<strong>Phone:</strong> (805)504-6718 | 
+<a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></p>
+
+<hr> <!-- horizontal line -->
+
+<h2>Education</h2>
+<ul>
+  <li><strong>MoorPark College</strong> – Computer Science (AA in progress)</li>
+  <li>Plans to pursue BS in Computer Science</li>
+</ul>
+
+<h2>Skills</h2>
+<ul>
+  <li>C++ (primary language)</li>
+  <li>Learning HTML & Web Development</li>
+  <li>Problem-solving and algorithms</li>
+</ul>
+
+<h2>Projects</h2>
+<ul>
+  <li><strong>Shapes in C++</strong> – Built classes for Rectangle, Square, and Circle with unit testing</li>
+  <li><strong>AI Detector</strong> – Program to detect AI-generated content (in progress)</li>
+</ul>
+
+<h2>Experience</h2>
+<p>Currently focused on studies</p>
+
+<h2>Hobbies</h2>
+<ul>
+  <li>Gaming</li>
+  <li>Fitness</li>
+  <li>Bible study</li>
+  <li>Gym</li>
+</ul>
+<h2>Contact Me</h2>
+<form action="#" method="post">
+  <fieldset>
+    <legend>Send a message</legend>
+
+    <label for="name">Name</label><br>
+    <input id="name" name="name" type="text" placeholder="Your full name" required><br><br>
+
+    <label for="email">Email</label><br>
+    <input id="email" name="email" type="email" placeholder="you@example.com" required><br><br>
+
+    <label for="subject">Subject</label><br>
+    <input id="subject" name="subject" type="text" required><br><br>
+
+    <label for="message">Message</label><br>
+    <textarea id="message" name="message" rows="5" cols="30" placeholder="Write your message..." required></textarea><br><br>
+
+    <label for="reason">Reason</label><br>
+    <select id="reason" name="reason">
+      <option value="general">General</option>
+      <option value="tutoring">Tutoring</option>
+      <option value="project">Project inquiry</option>
+    </select><br><br>
+
+    <label>
+      <input type="checkbox" name="ok_to_contact" value="yes" checked>
+      It’s okay to contact me back
+    </label><br><br>
+
+    <button type="submit">Send</button>
+    <button type="reset">Clear</button>
+  </fieldset>
+</form>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>Marc Hernandez</h1>
+  <p>Computer Science Student • C++ • Web Dev Learner</p>
+
+  <nav aria-label="Primary">
+    <ul>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <aside aria-label="Contact Info">
+    <address>
+      <strong>Email:</strong> <a href="marca.hernandez1@yahoo.com">your@email.com</a><br>
+      <strong>Phone:</strong> (123) 456-7890<br>
+      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/your-handle" target="_blank">your-handle</a>
+    </address>
+  </aside>
+
+  <section id="education" aria-labelledby="education-heading">
+    <h2 id="education-heading">Education</h2>
+    <ul>
+      <li>
+        <strong>MoorPark College</strong> — A.A. in Computer Science (in progress)
+        <br><small>Expected graduation: <time datetime="2026-05">May 2026</time></small>
+      </li>
+      <li>Plan to pursue B.S. in Computer Science</li>
+    </ul>
+  </section>
+
+  <section id="skills" aria-labelledby="skills-heading">
+    <h2 id="skills-heading">Skills</h2>
+    <ul>
+      <li>C++ (primary)</li>
+      <li>HTML (beginner), CSS (next), JS (later)</li>
+      <li>Problem-solving & basic algorithms</li>
+    </ul>
+  </section>
+
+  <section id="projects" aria-labelledby="projects-heading">
+    <h2 id="projects-heading">Projects</h2>
+
+    <article aria-labelledby="proj-shapes-title">
+      <h3 id="proj-shapes-title">Shapes in C++</h3>
+      <p>Implemented <strong>Rectangle</strong>, <strong>Square</strong>, and <strong>Circle</strong> classes with unit tests.</p>
+      <p><a href="#" target="_blank">View code</a></p>
+    </article>
+
+    <article aria-labelledby="proj-detector-title">
+      <h3 id="proj-detector-title">AI Detector</h3>
+      <p>Program to detect AI-generated content (in progress).</p>
+      <p><a href="#" target="_blank">Repo / Notes</a></p>
+    </article>
+  </section>
+  <section id="contact" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Contact Me</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Send a message</legend>
+
+        <label for="name">Name</label><br>
+        <input id="name" name="name" type="text" placeholder="Your full name" required><br><br>
+
+        <label for="email">Email</label><br>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required><br><br>
+
+        <label for="subject">Subject</label><br>
+        <input id="subject" name="subject" type="text" required><br><br>
+
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="5" cols="30" placeholder="Write your message..." required></textarea><br><br>
+
+        <button type="submit">Send</button>
+        <button type="reset">Clear</button>
+      </fieldset>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; <time datetime="2025">2025</time> Marc Hernandez</p>
+</footer>
+
+</body>
+</html>
